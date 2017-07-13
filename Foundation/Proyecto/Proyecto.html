@@ -1,0 +1,359 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con Foundation</title>
+    <link rel="stylesheet" href="icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/pricing-table.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Ravi+Prakash" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+          <nav data-magellan>
+            <ul class="vertical menu" data-drilldown>
+              <li>
+                <a href="#social-container">
+                  <img src="icons/svgs/fi-home.svg" >
+                  <label>Home</label>
+                </a>
+                <ul id="submenu-container" class="vertical menu">
+                  <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
+                  <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sabado</a></li>
+                  <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
+                </ul>
+              </li>
+              <li><a href="#tickets-container">
+                <img src="icons/svgs/fi-bookmark.svg" >
+                <label>Bookmark</label>
+              </a></li>
+              <li class="active">
+                <a href="#mapa-container">
+                  <img src="icons/svgs/fi-info.svg" >
+                  <label>Info</label>
+                </a>
+              </li>
+              <li>
+                <a href="#submenu-container">
+                  <img src="icons/svgs/fi-mail.svg" >
+                  <label>Mail</label>
+                </a>
+              </li>
+              <li>
+                <a href="#tickets-action">
+                  <img src="icons/svgs/fi-like.svg" >
+                  <label>Like</label>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- Social -->
+          <section id="social-container">
+            <div class="row align-center text-center">
+              <div class="small-1 columns">
+                <a href="#" target="_blank">
+                  <i class="fi-social-facebook"></i>
+                </a>
+              </div>
+              <div class="small-1 columns">
+                <a href="#" target="_blank">
+                  <i class="fi-social-twitter"></i>
+                </a>
+              </div>
+              <div class="small-1 columns">
+                <a href="#" target="_blank">
+                  <i class="fi-social-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Social -->
+
+          <!-- logo -->
+
+          <section id="logo-container">
+            <div class="callout text-center">
+              <h1>
+                Proyecto de prueba
+              </h1>
+            </div>
+
+          </section>
+
+          <!-- logo -->
+
+          <!-- menu -->
+
+          <section id="scrollSticky" data-sticky-container>
+            <div id="sticky" class="data-sticky" data-sticky data-options="marginTop:0;"
+             data-sticky-on="small" data-top-anchor="scrollSticky">
+              <nav id="menu-container" data-magellan>
+                <ul class="show-for-small-only align-spaced text-center">
+                  <li><a href="#" data-toggle="offCanvas">Menu</a></li>
+                </ul>
+                <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                  <li>
+                    <a href="#social-container">
+                      <img src="icons/svgs/fi-home.svg" >
+                      <label>Home</label>
+                    </a>
+                    <ul id="submenu-container" class="menu">
+                      <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
+                      <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sabado</a></li>
+                      <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#tickets-container">
+                    <img src="icons/svgs/fi-bookmark.svg" >
+                    <label>Bookmark</label>
+                  </a></li>
+                  <li class="active">
+                    <a href="#mapa-container">
+                      <img src="icons/svgs/fi-info.svg" >
+                      <label>Info</label>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#submenu-container">
+                      <img src="icons/svgs/fi-mail.svg" >
+                      <label>Mail</label>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tickets-action">
+                      <img src="icons/svgs/fi-like.svg" >
+                      <label>Like</label>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+
+          <!-- menu -->
+
+      <!-- tickets -->
+
+      <section id="tickets-action">
+        <div class="callout large text-center">
+          <a href="#">
+            <button class="large hollow button">
+              Comprar Ticket
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- tickets -->
+
+      <!-- Lineup -->
+
+      <section id="lineup-container">
+        <h3 class="text-center">Lineup</h3>
+        <ul class="tabs text-center" data-tabs id="lineup-tabs">
+          <li class="tabs-title is-active">
+            <a href="#panelViernes">Viernes</a>
+          </li>
+          <li class="tabs-title">
+            <a href="#panelSabado">Sábado</a>
+          </li>
+          <li class="tabs-title">
+            <a href="#panelDomingo">Domingo</a>
+          </li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="lineup-tabs">
+          <div class="tabs-panel is-active" id="panelViernes">
+            <div class="row">
+
+              <div class="small-12 medium-6 columns">
+                <div class="orbit" data-orbit>
+                <div class="orbit-container">
+                  <div class="orbit-slide">
+                      <img class="orbit-image" src="images/image1.JPG" alt="Habitacion">
+                      <figcaption class="orbit-caption">Habitacion prueba</figcaption>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <div class="orbit" data-orbit>
+                <div class="orbit-container">
+                  <div class="orbit-slide">
+                      <img class="orbit-image" src="images/image2.JPG" alt="Habitacion">
+                      <figcaption class="orbit-caption">Habitacion prueba</figcaption>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <div class="orbit" data-orbit>
+                <div class="orbit-container">
+                  <div class="orbit-slide">
+                      <img class="orbit-image" src="images/image3.JPG" alt="Habitacion">
+                      <figcaption class="orbit-caption">Habitacion prueba</figcaption>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <div class="orbit" data-orbit>
+                <div class="orbit-container">
+                  <div class="orbit-slide">
+                      <img class="orbit-image" src="images/image4.JPG" alt="Habitacion">
+                      <figcaption class="orbit-caption">Habitacion prueba</figcaption>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <div class="orbit" data-orbit>
+                <div class="orbit-container">
+                  <div class="orbit-slide">
+                      <img class="orbit-image" src="images/image6.JPG" alt="Habitacion">
+                      <figcaption class="orbit-caption">Habitacion prueba</figcaption>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <div class="orbit" data-orbit>
+                <div class="orbit-container">
+                  <div class="orbit-slide">
+                      <img class="orbit-image" src="images/image6.JPG" alt="Habitacion">
+                      <figcaption class="orbit-caption">Habitacion prueba</figcaption>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="tabs-panel" id="panelSabado">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolores quod voluptates unde molestiae odio magnam.
+          </div>
+          <div class="tabs-panel" id="panelDomingo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+
+      </section>
+
+      <!-- lineup -->
+
+      <!-- Compra de boletos -->
+
+      <section id="tickets-container" data-magellan-target="tickets-container">
+        <h3 class="text-center">Compra tus boletos</h3>
+        <div class="row" data-equalizer data-equalize-on="small">
+          <div class="column small-11 medium-6 medium-offset-3">
+            <ul class="pricing-table">
+              <li class="title">Enterprise</li>
+              <li class="price">$120</li>
+              <li class="description">An awesome description</li>
+              <li>42 Rad Features</li>
+              <li>7GB of Power</li>
+              <li><a class="button" href="#">Seleccionar</a></li>
+            </ul>
+          </div>
+
+          <div class="column small-6  medium-4 medium-offset-2">
+            <ul class="pricing-table doble">
+              <li class="title">Platinum</li>
+              <li class="price">$90</li>
+              <li class="description">Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li data-equalizer-watch>Lorem ipsum dolor sit amet.</li>
+              <li><a class="button" href="#">Seleccionar</a></li>
+            </ul>
+          </div>
+          <div class="column small-6 medium-4">
+            <ul class="pricing-table doble">
+              <li class="title">Platinum</li>
+              <li class="price">$90</li>
+              <li class="description">Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li data-equalizer-watch>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</li>
+              <li><a class="button" href="#">Seleccionar</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- / Compra de boletos -->
+
+      <!-- Subscribete -->
+
+      <section id="subscribete-container">
+        <h3 class="text-center">Subscribete</h3>
+        <h4 class="text-center">
+          <small>Y recibe las últimas novedades del concierto</small>
+        </h4>
+        <form action="https://formspree.io/carpido@gmail.com" method="POST" novalidate data-abide>
+          <div data-abide-error class="row columns small-12 medium-6 text-center" style="display:none;">
+            <p><i class="fi-alert"></i> El correo que escribió no es valido</p>
+          </div>
+          <div class="row columns small-12 medium-6" data-equalizer data-equalize-on="small">
+            <div class="input-group">
+              <span  class="input-group-label"><i class="fi-mail"></i></span>
+              <input data-equalizer-watch type="email" name="email"
+              class="input-group-field" placeholder="Introduce tu email"
+              required>
+              <div class="input-group-button">
+                <input data-equalizer-watch type="submit" class="button" value="Subscribirse">
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+
+      <!-- Subscribete -->
+
+      <!-- Mapa -->
+
+      <section id="mapa-container" data-magellan-target="mapa-container">
+        <h3 class="text-center">Información</h3>
+        <div class="text-center">
+          <div class="info-map" data-interchange="[assets/map-small.html, small], [assets/map.html, medium]"></div>
+        </div>
+      </section>
+
+      <!-- / Mapa -->
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
